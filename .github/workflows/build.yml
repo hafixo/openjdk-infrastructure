@@ -36,7 +36,7 @@ jobs:
       run: |
         docker build \
           -t $CONTAINER_IMAGE \
-          -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$CONTAINER_IMAGE ./ansible/Dockerfile.Centos6
+          -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$CONTAINER_IMAGE ./ansible/Dockerfile.CentOS6
 
     - name: Push Centos6 Image
       if: github.ref == 'refs/heads/master'
